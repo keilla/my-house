@@ -19,10 +19,21 @@ class App extends Component {
   render() {
     //List of labels
     const { places } = this.state;
+    const placeCollums = [
+      {label: 'tipo', colspan: 2},
+      {label: 'quartos'},
+      {label: 'garagem'},
+      {label: 'escritorio'},
+      {label: 'metro'},
+      {label: 'trabalho'},
+      {label: 'bairro'},
+      {label: 'valor', colspan: 2},
+      {label: 'link'}
+    ];
     return (
       <div>
         <Header />
-        <PlaceList places={places} />
+        <PlaceList places={places} placeCollums={placeCollums} />
         <PlaceForm handleSubmit={this.handleSubmit} />
       </div>
     );

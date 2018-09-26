@@ -119,11 +119,7 @@ class PlaceForm extends Component {
           </input>
         </div>
         <div className='button-list'>
-          {/* <Button label='salvar' /> */}
-          <input
-            type="button"
-            value="Submit"
-            onClick={this.submitForm} />
+          <Button label='salvar' onClick={this.submitForm} />
         </div>
       </form>
     );

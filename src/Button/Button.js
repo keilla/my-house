@@ -3,8 +3,12 @@ import './Button.css';
 
 class Button extends Component {
   render() {
-    return(
-      <button className='button'>{this.props.label}</button>
+    return (
+      <input
+        className='button'
+        type='button'
+        value={this.props.label}
+        onClick={this.props.onClick} />
     );
   }
 }
