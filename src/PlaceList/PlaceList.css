@@ -1,0 +1,17 @@
+.place-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 40px;
+}
+
+.place-list > .cell {
+  flex-basis: auto;
+  width: 10%;
+  border-bottom: solid 2px #e4e4e4;
+  padding: 10px 0;
+}
+
+.place-list > .cell.-large {
+  width: 15%;
+}

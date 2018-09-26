@@ -1,0 +1,47 @@
+.collumn-form {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 400px;
+  justify-content: space-around;
+  margin: 40px;
+  padding: 20px;
+  border: 1px solid #E5E5E5;
+}
+
+.collumn-form > .field {
+  flex-basis: 50%;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.collumn-form > .field > label {
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.field > select {
+  height: 30px;
+  width: 150px;
+}
+
+.field > input {
+  height: 24px;
+  width: 150px;
+}
+
+.field.-full {
+  flex-basis: 100%;
+}
+
+.collumn-form > .field > .-small {
+  width: 50px;
+}
+
+.collumn-form > .field > .-large {
+  width: 350px;
+}
+
+.button-list {
+  width: 100%;
+}
